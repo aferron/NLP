@@ -1,0 +1,68 @@
+DATASET : mem
+MODEL : latent
+DATA : /home/ruicao/NLP/datasets/hate-speech/hate-mem
+MM : /home/ruicao/NLP/datasets/hate-speech/MMHS
+OFF : /home/ruicao/NLP/datasets/hate-speech/OFF
+RESULT : ./result
+DICT : ./dictionary
+GAMMA : 4
+NUM_REGIONS : 196
+FEAT_FC_DIM : 2048
+FEAT_POOL_DIM : 1024
+V_HIDDEN : 1024
+EMB_DROPOUT : 0.5
+FC_DROPOUT : 0.5
+ATT_DROPOUT : 0.3
+MIN_OCC : 2
+BATCH_SIZE : 64
+EMB_DIM : 300
+NUM_EXT : 27
+MID_DIM : 512
+ATT_MID_DIM : 128
+PROJ_DIM : 512
+NUM_HIDDEN : 512
+NUM_LAYER : 1
+NUM_HEAD : 8
+NUM_LATENT : 6
+TRANS_LAYER : 1
+BIDIRECT : False
+L_RNN_DROPOUT : 0.3
+TEMPERATURE : 0.3
+LATENT_RATE : 0.05
+LENGTH : 25
+NUM_RACE : 8
+NUM_ENTITY : 20
+CREATE_DICT : False
+CREATE_EMB : False
+DEBUG : False
+OFF_EVAL : False
+ABLATION : False
+SAVE_NUM : 24
+EPOCHS : 20
+SEED : 1111
+CUDA_DEVICE : 7
+WARM_UP : 2000
+epoch 0
+	train_loss: 0.02, accuracy: 61.40
+	eval accuracy: 65.20, auc: 69.59 
+epoch 1
+	train_loss: 0.01, accuracy: 76.42
+	eval accuracy: 69.20, auc: 75.18 
+epoch 2
+	train_loss: 0.01, accuracy: 85.42
+	eval accuracy: 72.80, auc: 78.95 
+epoch 3
+	train_loss: 0.01, accuracy: 90.66
+	eval accuracy: 69.80, auc: 79.51 
+epoch 4
+	train_loss: 0.01, accuracy: 94.56
+	eval accuracy: 72.40, auc: 81.23 
+epoch 5
+	train_loss: 0.01, accuracy: 96.22
+	eval accuracy: 73.00, auc: 80.68 
+epoch 6
+	train_loss: 0.00, accuracy: 97.65
+	eval accuracy: 69.20, auc: 80.24 
+epoch 7
+	train_loss: 0.00, accuracy: 97.99
+	eval accuracy: 75.80, auc: 82.78 

@@ -1,0 +1,99 @@
+DATASET : off
+MODEL : latent
+DATA : /home/ruicao/NLP/datasets/hate-speech/hate-mem
+MM : /home/ruicao/NLP/datasets/hate-speech/MMHS
+OFF : /home/ruicao/NLP/datasets/hate-speech/OFF
+RESULT : ./result
+DICT : ./dictionary
+GAMMA : 4
+NUM_REGIONS : 196
+FEAT_FC_DIM : 2048
+FEAT_POOL_DIM : 1024
+V_HIDDEN : 1024
+EMB_DROPOUT : 0.5
+FC_DROPOUT : 0.1
+ATT_DROPOUT : 0.3
+MIN_OCC : 2
+BATCH_SIZE : 64
+EMB_DIM : 300
+NUM_EXT : 27
+MID_DIM : 512
+ATT_MID_DIM : 128
+PROJ_DIM : 512
+NUM_HIDDEN : 512
+NUM_LAYER : 1
+NUM_HEAD : 8
+NUM_LATENT : 6
+TRANS_LAYER : 1
+BIDIRECT : False
+L_RNN_DROPOUT : 0.3
+TEMPERATURE : 0.5
+LATENT_RATE : 0.03
+LENGTH : 25
+NUM_RACE : 8
+NUM_ENTITY : 20
+CREATE_DICT : False
+CREATE_EMB : False
+DEBUG : False
+OFF_EVAL : False
+ABLATION : False
+SAVE_NUM : 27
+EPOCHS : 20
+SEED : 1111
+CUDA_DEVICE : 7
+WARM_UP : 2000
+epoch 0
+	train_loss: 0.03, accuracy: 51.91
+	eval accuracy: 0.00, auc: 0.00 
+	eval off f1: 48.08, precision: 45.77, recall: 60.40 
+	test off f1: 53.24, precision: 71.12, recall: 63.76 
+epoch 1
+	train_loss: 0.02, accuracy: 53.93
+	eval accuracy: 0.00, auc: 0.00 
+	eval off f1: 48.70, precision: 53.78, recall: 59.06 
+	test off f1: 49.95, precision: 51.73, recall: 60.40 
+epoch 2
+	train_loss: 0.01, accuracy: 66.52
+	eval accuracy: 0.00, auc: 0.00 
+	eval off f1: 51.78, precision: 51.75, recall: 52.35 
+	test off f1: 61.18, precision: 62.41, recall: 61.07 
+epoch 3
+	train_loss: 0.01, accuracy: 74.16
+	eval accuracy: 0.00, auc: 0.00 
+	eval off f1: 58.36, precision: 61.49, recall: 58.39 
+	test off f1: 57.10, precision: 62.16, recall: 57.05 
+epoch 4
+	train_loss: 0.01, accuracy: 77.98
+	eval accuracy: 0.00, auc: 0.00 
+	eval off f1: 47.83, precision: 52.27, recall: 47.65 
+	test off f1: 52.21, precision: 59.53, recall: 52.35 
+epoch 5
+	train_loss: 0.01, accuracy: 87.87
+	eval accuracy: 0.00, auc: 0.00 
+	eval off f1: 58.22, precision: 59.91, recall: 57.72 
+	test off f1: 63.52, precision: 65.02, recall: 63.09 
+epoch 6
+	train_loss: 0.01, accuracy: 91.01
+	eval accuracy: 0.00, auc: 0.00 
+	eval off f1: 60.28, precision: 60.20, recall: 61.07 
+	test off f1: 60.56, precision: 61.03, recall: 60.40 
+epoch 7
+	train_loss: 0.00, accuracy: 93.71
+	eval accuracy: 0.00, auc: 0.00 
+	eval off f1: 58.94, precision: 59.53, recall: 59.06 
+	test off f1: 62.74, precision: 63.21, recall: 62.42 
+epoch 8
+	train_loss: 0.00, accuracy: 98.43
+	eval accuracy: 0.00, auc: 0.00 
+	eval off f1: 64.00, precision: 64.84, recall: 64.43 
+	test off f1: 58.85, precision: 59.67, recall: 59.06 
+epoch 9
+	train_loss: 0.00, accuracy: 98.65
+	eval accuracy: 0.00, auc: 0.00 
+	eval off f1: 58.86, precision: 59.22, recall: 59.06 
+	test off f1: 60.61, precision: 60.96, recall: 60.40 
+epoch 10
+	train_loss: 0.00, accuracy: 98.43
+	eval accuracy: 0.00, auc: 0.00 
+	eval off f1: 65.15, precision: 65.59, recall: 65.10 
+	test off f1: 64.60, precision: 64.50, recall: 65.10 
